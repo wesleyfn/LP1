@@ -1,12 +1,9 @@
-/*
-Jogo da "Véia"
-O código se baseia nas regras simples do jogo da velha. Com qualquer linha vertical, 
-horizontal ou diagonal possuindo valores idênticos na matriz o programa imprime o vencedor 
-e encerra.
-
-
-Author: @wesleyfn
+/* Jogo da "Véia"
+ * O código se baseia nas regras simples do jogo da velha. Com qualquer linha vertical, 
+ * horizontal ou diagonal possuindo valores idênticos na matriz o programa imprime o vencedor 
+ * e encerra.
 */
+
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
@@ -17,9 +14,8 @@ int main()
     setlocale(LC_ALL, "portuguese");
     char matriz[MAX][MAX] = {'1','2','3','4','5','6','7','8','9'};
     char player_xo = 'O', selecionado;
-    int cont = 0;
 
-    for( ; cont < 9 ; )
+    for(int cont = 0 ; cont < 9 ; )
     {
         printf("Jogo da Véia\n");
         for (int i = 0; i < MAX; i++) {
@@ -73,7 +69,7 @@ int main()
         }
         //Verifica se deu VELHA!
         else if (cont == 9) {
-            printf("DEU VELHA!");
+            printf("DEEU VELHA!");
         }
         //Indica onde marcar X ou O na matriz
         else 
