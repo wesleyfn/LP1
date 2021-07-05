@@ -17,6 +17,7 @@ int main()
 
     for(int cont = 0 ; cont < 9 ; )
     {
+        printf("\e[H\e[2J"); //"Limpa" o terminal
         printf("Jogo da Véia\n");
         for (int i = 0; i < MAX; i++) {
             for (int j = 0; j < MAX; j++)

@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-int calculo()
+int main()
 {
-    int x = 15;
-    int y = 5;
-    return x+y;
+    int num;
+    printf("Digite: ");
+    scanf("%d", &num);
+
+    printf("%d\n", num);
+    return 0;
 }
