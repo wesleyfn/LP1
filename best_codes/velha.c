@@ -12,7 +12,7 @@
 int main()
 {
     setlocale(LC_ALL, "portuguese");
-    char matriz[MAX][MAX] = {'1','2','3','4','5','6','7','8','9'};
+    char matriz[MAX][MAX] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
     char player_xo = 'O', selecionado;
 
     for(int cont = 0 ; cont < 9 ; )

@@ -29,10 +29,10 @@ int main()
         switch (op)
         {
         case 1:
-
+        
+            i = indice();
             if(code_produto[i] == 0)
             {
-                i = indice();
                 printf("Digite o novo código na posição [%d]: ", i);
                 scanf(" %d", &code_produto[i]);
             }
@@ -60,7 +60,7 @@ int main()
         
         case 5:
             exit;
-            break;
+            
         default:
             break;
         }

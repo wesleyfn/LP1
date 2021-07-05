@@ -25,7 +25,7 @@ int main()
             }
         }
         //for para inverter a palavra solicitada
-        for (int t = 0, c = tam-1; t < tam; t++, c--)
+        for (t = 0, c = tam-1; t < tam; t++, c--)
         {
             palavra2[c] = palavra[t];
         }
