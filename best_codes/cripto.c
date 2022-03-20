@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     char palavra[1001], palavra2[1001];
     int casos, t, c, tam;
@@ -37,8 +37,7 @@ int main()
         {
             palavra2[i] -= 1;
         }
-
-        printf(":: %s\n", palavra2);
+        printf("-> %s\n", palavra2);
     }
 
     return 0;
